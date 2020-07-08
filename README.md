@@ -1,17 +1,20 @@
 # partitionEvenOdd
 def partitionEvenOddIntegers(numbers):
-    # Time: O(?)
-    # Space: O(?)
-    #
-    # Your code here ...
-    #
+while i<j: 
+    # iterate till non-odd (even)
+    while (i<j and a[i]%2 !=0):	
+    	i+=1
+    # iterate till non-even (odd)
+    while (i<j and a[j]%2 ==0):	
+    	j-=1
+    if i != j:
+        # swap even with odd
+        a[i], a[j] = a[j], a[i]
 
 
 def runTest(numbers):
     print('Input:', numbers)
-
     partitionEvenOddIntegers(numbers)
-
     print('Output:', numbers)
 
 
